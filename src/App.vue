@@ -44,8 +44,8 @@
     async fetchWeather() {
       const data = await fetch(`${this.base_url}weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
       this.weather = await data.json()
-      console.log(this.weather)
-      console.log("data",data)
+      // console.log(this.weather)
+      // console.log("data",data)
     }
   },
   created() {
